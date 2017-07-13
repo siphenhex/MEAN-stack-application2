@@ -1,0 +1,61 @@
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+    </div>
+    <div class="col-sm-8 text-left" margin-top:1cm><br> 
+ <div class="container">
+    <h1>Predefined Machine type</h1>      
+  </div>
+  <br><br>
+  <form>
+      <label for="r">Machine types:</label>
+      <div class="radio" id = "r">
+  <label><input type="radio" name="optradio">Standard</label>
+</div>
+<div class="radio" id = "r">
+  <label><input type="radio" name="optradio">High CPU</label>
+</div>
+<div class="radio" id = "r">
+  <label><input type="radio" name="optradio">HIgh Memory</label>
+</div>
+      <div class="form-group">
+  <label for="sel">Standard:</label>
+  <select class="form-control" id="sel" ng-model="vm.user.sel">
+    <option>n1-standard-1</option>
+    <option>n1-standard-2</option>
+    <option>n1-standard-4</option>
+    <option>n1-standard-8</option>
+    <option>n1-standard-16</option>
+    <option>n1-standard-32</option>
+    <option>n1-standard-64</option>
+  </select>
+</div>
+<div class="form-group">
+  <label for="sel1">Number of machines:</label>
+  <select class="form-control" id="sel1" ng-model="vm.user.sel1">
+    <option>1</option>
+    <option>2</option>
+    <option>4</option>
+    <option>8</option>
+    <option>16</option>
+    <option>32</option>
+    <option>64</option>
+  </select>
+</div>
+<div class = "form-group">
+<button class="btn btn-primary" ng-click="vm.submit()">Submit</button><br/><br/>
+</div>
+<div class="form-group">
+  <label for="usr">Price:</label>
+  <input type="text" class="form-control" id="usr">
+</div>
+<div class="form-group">
+  <label for="pwd">Estimated Price:</label>
+  <input type="text" class="form-control" id="price" ng-model="vm.user.price">
+</div>
+  </form><br>
+    </div>
+    <div class="col-sm-2 sidenav">
+    </div>
+  </div>
+</div>
